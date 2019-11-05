@@ -180,7 +180,7 @@ SAN = ServerFQDN,AG1_listener.Adventure-Works.com, AG2_listener.Adventure-Works.
  Use the **setspn** Windows command line tool to configure the SPN.  For example to configure an SPN for an availability group named `AG1listener.Adventure-Works.com` hosted on a set of instances of SQL Server all configured to run under the domain account `corp/svclogin2`:  
   
 ```  
-setspn -A MSSQLSvc/AG1listener.Adventure-Works.com:1433 corp/svclogin2  
+setspn -A MSSQLSvc/AG1listener.Adventure-Works.com:1433 corp\svclogin2  
 ```  
   
  For more information about manual registration of a SPN for SQL Server, see [Register a Service Principal Name for Kerberos Connections](../../../database-engine/configure-windows/register-a-service-principal-name-for-kerberos-connections.md).  
